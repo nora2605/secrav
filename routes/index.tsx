@@ -1,8 +1,25 @@
 /** @jsxImportSource preact */
-import Counter from "../islands/Counter.tsx";
+import { Head } from "$fresh/runtime.ts";
+import { useState } from "preact/hooks";
+import Project from "../components/Project.tsx";
 
-export const Head = () => (
-      <head>
+export default function Home() {
+  const [projects] = useState([
+    {
+      name: "Crane 2",
+      path: "/gamedev/crane2",
+      desc: "Revolutionary Game about a Crane",
+    },
+    {
+      name: "Crane 3",
+      path: "/gamedev/crane3",
+      desc: "Another revolutionary Game about a Crane",
+    },
+  ]);
+
+  return (
+    <div class="flex flex-col">
+      <Head>
         <title>Home of Secrav</title>
         <meta property="og:title" content="Secrav Productions Home Page" />
         <meta property="og:type" content="website" />
@@ -10,30 +27,37 @@ export const Head = () => (
         <meta property="og:image" content="https://secrav.cf/logo.png" />
         <meta property="og:description" content="The dark side of creativity" />
         <meta name="theme-color" content="#21f5aa" />
-        {/* <meta name="twitter:card" content="summary_large_image" /> */}
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-      </head>
-);
-
-export default function Home() {
-  return (
-    <div class="p-4 mx-auto max-w-screen-md text-white self-center h-screen content-center grid">
-      <Head />
-      <div class="hover:opacity-95 opacity-70 bg-[#222] rounded-lg border-x-2 border-y-1 p-6 border-[#21f5aa]" style="box-shadow: 0 25px 50px -12px rgb(255 255 255 / 0.25);">
-      <img
-        src="/logo.svg"
-        class="w-32 h-32"
-        alt="the fresh logo: a sliced lemon dripping with juice"
-      />
-      <h1>Built with fresh! ⬆️</h1>
-      <h2 class="my-6 text-4xl text-[#21f5aa]">
-        Secrav 🧠 ❤️ 🏳️‍⚧️
-      </h2>
-      <p>
-        I'm sorry, but there's nothing here yet!
-      </p>
-      <Counter start={0} />
-    </div>
+        <link rel="stylesheet" href="./index.css" />
+      </Head>
+      <header class="bg-gray-800 text-white py-4">
+        <div class="max-w-screen-md mx-auto px-4">
+          <nav class="flex justify-between items-center">
+            <h1 class="text-2xl font-mono">SeCrAv Pro</h1>
+            <ul class="flex">
+              <li class="ml-6">
+                <a href="/gamedev">Game Development</a>
+              </li>
+              <li class="ml-6">
+                <a href="/about">About</a>
+              </li>
+              <li class="ml-6">
+                <a href="/contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="flex-grow bg-gray-900 text-white">
+        <div class="max-w-screen-md mx-auto px-4 py-8">
+          <h1 class="text-3xl font-bold">Welcome to SeCrAv Pro!</h1>
+          <p class="mt-4">{`We are. Actually it's only me. I am.`}</p>
+          <p class="mt-4">Check out some of my work:</p>
+          <ul class="mt-4">
+            {projects.map((p) => <Project project={p} />)}
+          </ul>
+        </div>
+      </main>
     </div>
   );
 }
