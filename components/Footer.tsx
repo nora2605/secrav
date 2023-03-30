@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer class="bg-gray-800 text-white py-4 sticky top-[100vh]">
+    <footer class="bg-gray-800 text-white py-4 sticky top-[100vh] bottom-0">
       <div class="max-w-screen-md mx-auto px-4 flex justify-between items-center">
         <div>
           <p class="text-gray-400">Follow us:</p>

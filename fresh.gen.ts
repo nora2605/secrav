@@ -5,17 +5,32 @@
 import config from "./deno.json" assert { type: "json" };
 import * as $0 from "./routes/_404.tsx";
 import * as $1 from "./routes/_app.tsx";
-import * as $2 from "./routes/api/projects.tsx";
-import * as $3 from "./routes/index.tsx";
+import * as $2 from "./routes/about.tsx";
+import * as $3 from "./routes/api/projects.tsx";
+import * as $4 from "./routes/contact.tsx";
+import * as $5 from "./routes/gamedev/[name].tsx";
+import * as $6 from "./routes/gamedev/index.tsx";
+import * as $7 from "./routes/index.tsx";
+import * as $$0 from "./islands/Header.tsx";
+import * as $$1 from "./islands/MessageBox.tsx";
+import * as $$2 from "./islands/Project.tsx";
 
 const manifest = {
   routes: {
     "./routes/_404.tsx": $0,
     "./routes/_app.tsx": $1,
-    "./routes/api/projects.tsx": $2,
-    "./routes/index.tsx": $3,
+    "./routes/about.tsx": $2,
+    "./routes/api/projects.tsx": $3,
+    "./routes/contact.tsx": $4,
+    "./routes/gamedev/[name].tsx": $5,
+    "./routes/gamedev/index.tsx": $6,
+    "./routes/index.tsx": $7,
   },
-  islands: {},
+  islands: {
+    "./islands/Header.tsx": $$0,
+    "./islands/MessageBox.tsx": $$1,
+    "./islands/Project.tsx": $$2,
+  },
   baseUrl: import.meta.url,
   config,
 };
