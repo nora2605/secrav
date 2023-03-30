@@ -1,22 +1,14 @@
-/** @jsxImportSource preact */
 import { Head } from "$fresh/runtime.ts";
-import { useState } from "preact/hooks";
 import Project from "../components/Project.tsx";
+import { Project as ProjectType } from "../types/types.tsx";
+
+const projects: ProjectType[] = JSON.parse(
+  new TextDecoder("utf-8").decode(
+    Deno.readFileSync("./static/gamedev/project.json"),
+  ),
+).projects;
 
 export default function Home() {
-  const [projects] = useState([
-    {
-      name: "Crane 2",
-      path: "/gamedev/crane2",
-      desc: "Revolutionary Game about a Crane",
-    },
-    {
-      name: "Crane 3",
-      path: "/gamedev/crane3",
-      desc: "Another revolutionary Game about a Crane",
-    },
-  ]);
-
   return (
     <div class="flex flex-col">
       <Head>

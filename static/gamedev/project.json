@@ -1,0 +1,14 @@
+{
+  "projects": [
+    {
+      "name": "Crane 2",
+      "path": "/gamedev/crane2",
+      "desc": "Revolutionary Game about a Crane"
+    },
+    {
+      "name": "Crane 3",
+      "path": "/gamedev/crane3",
+      "desc": "Another revolutionary Game about a Crane"
+    }
+  ]
+}
