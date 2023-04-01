@@ -1,12 +1,24 @@
 {
   "projects": [
     {
+      "name": "Crane 1",
+      "path": "/gamedev/crane1",
+      "desc": "Where it all began..."
+    },
+    {
       "name": "Crane 2",
       "path": "/gamedev/crane2",
-      "desc": "Revolutionary Game about a Crane",
-      "releases": [
-        { "version": "1.0.0", "url": "https://github.com/nora2605/crane" }
-      ]
+      "desc": "Revolutionary Game about a Crane"
+    },
+    {
+      "name": "Genshmup",
+      "path": "/gamedev/genshmup",
+      "desc": "oh hell yeah"
+    },
+    {
+      "name": "Ganyu KFC Chicken Simulator",
+      "path": "/gamedev/gkfcs",
+      "desc": "nom"
     },
     {
       "name": "Crane 3",

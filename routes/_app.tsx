@@ -14,7 +14,7 @@ export default function App(props: AppProps) {
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="stylesheet" type="text/css" href="/app.css" />
       </Head>
-      <div class="flex flex-col h-screen bg-gray-900">
+      <div class="flex flex-col min-h-screen bg-gray-900">
         <Header />
         <props.Component />
         <Footer />

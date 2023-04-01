@@ -2,7 +2,7 @@ import { UnknownPageProps } from "$fresh/server.ts";
 
 export default function NotFoundPage(props: UnknownPageProps) {
   return (
-    <div class="grid h-screen place-items-center content-center background-black">
+    <div class="grid flex-grow place-items-center content-center background-black">
       <title>Oh no!</title>
       <h1 class="text-6xl text-white font-bold text-center self-stretch">
         404 - someone did an oopsie

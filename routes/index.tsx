@@ -4,7 +4,7 @@ import Project from "../islands/Project.tsx";
 import { Project as ProjectType } from "../types/types.tsx";
 
 const projects: ProjectType[] = JSON.parse(
-  new TextDecoder("utf-8").decode(await Deno.readFile('./static/gamedev/project.json'))
+  new TextDecoder("utf-8").decode(await Deno.readFile('./static/gamedev/home-projects.json'))
 ).projects;
 
 export default function Home(props: PageProps) {
@@ -23,8 +23,8 @@ export default function Home(props: PageProps) {
         <div class="max-w-screen-md mx-auto px-4 py-8">
           <h1 class="text-3xl font-bold">Welcome to SeCrAv Pro</h1>
           <p class="mt-4">{`We are. Actually it's only me. I am.`}</p>
-          <p class="mt-4">Check out some of my work:</p>
-          <ul class="mt-4">
+          <p class="mt-4 font-bold font-serif">Here is every project I have ever made:</p>
+          <ul class="mt-8">
             {projects.map((p) => <Project project={p} />)}
           </ul>
         </div>

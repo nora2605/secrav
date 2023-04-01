@@ -8,9 +8,15 @@ import * as $1 from "./routes/_app.tsx";
 import * as $2 from "./routes/about.tsx";
 import * as $3 from "./routes/api/projects.tsx";
 import * as $4 from "./routes/contact.tsx";
-import * as $5 from "./routes/gamedev/[name].tsx";
-import * as $6 from "./routes/gamedev/index.tsx";
-import * as $7 from "./routes/index.tsx";
+import * as $5 from "./routes/gamedev/crane1.tsx";
+import * as $6 from "./routes/gamedev/crane2.tsx";
+import * as $7 from "./routes/gamedev/crane3.tsx";
+import * as $8 from "./routes/gamedev/crane4.tsx";
+import * as $9 from "./routes/gamedev/index.tsx";
+import * as $10 from "./routes/gamedev/series/chronii/AoasE.tsx";
+import * as $11 from "./routes/gamedev/series/chronii/crane.tsx";
+import * as $12 from "./routes/gamedev/series/uncategorized.tsx";
+import * as $13 from "./routes/index.tsx";
 import * as $$0 from "./islands/Header.tsx";
 import * as $$1 from "./islands/MessageBox.tsx";
 import * as $$2 from "./islands/Project.tsx";
@@ -22,9 +28,15 @@ const manifest = {
     "./routes/about.tsx": $2,
     "./routes/api/projects.tsx": $3,
     "./routes/contact.tsx": $4,
-    "./routes/gamedev/[name].tsx": $5,
-    "./routes/gamedev/index.tsx": $6,
-    "./routes/index.tsx": $7,
+    "./routes/gamedev/crane1.tsx": $5,
+    "./routes/gamedev/crane2.tsx": $6,
+    "./routes/gamedev/crane3.tsx": $7,
+    "./routes/gamedev/crane4.tsx": $8,
+    "./routes/gamedev/index.tsx": $9,
+    "./routes/gamedev/series/chronii/AoasE.tsx": $10,
+    "./routes/gamedev/series/chronii/crane.tsx": $11,
+    "./routes/gamedev/series/uncategorized.tsx": $12,
+    "./routes/index.tsx": $13,
   },
   islands: {
     "./islands/Header.tsx": $$0,
